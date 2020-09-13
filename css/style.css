@@ -72,6 +72,13 @@
 		margin: 1.75em 0 0 0;
 	}
 	
+	.centered{
+		display: flex;
+  		align-items: center;
+  		justify-content: center;
+  		margin-bottom: 3%;
+	}
+
 	sub
 	{
 		position: relative;
