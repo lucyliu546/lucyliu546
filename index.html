@@ -10,11 +10,21 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		
+		
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
+
 		<noscript>
+			
+			
 			<link href="css/all.css" rel="stylesheet"> 
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -61,16 +71,193 @@
 									
 								</p>
 								<section>
+									<!-- Finance budget -->
 									<div class="row centered">
 										<div class="8u">
-											<a href="#" class="image fit"><img src="images/bakingsubs.png" alt=""></a>
+											<!-- Button trigger modal -->
+												<button type="button" class="btn btn-light" data-toggle="modal" data-target="#financemodal">
+												  <img class="image fit" src="" alt="">
+												</button>
+
+												<!-- Modal -->
+												<div class="modal fade" id="financemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+													<div class="modal-dialog modal-lg" role="document">
+														<div class="modal-content">
+														  
+														  <div class="modal-header">
+															  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															  <span aria-hidden="true">&times;</span>
+															</button>
+														  </div>
+	
+														  <div class="modal-body">
+															  
+															<div class="container-fluid">
+																<div class="row">
+																	<div class="col-sm">
+																	  <h2>Food Budget</h2>
+																	  <br>
+																	</div>
+																	
+																 </div>
+																  <div class="row">
+																	<div class="col">
+																		<img class="image fit" src="images/bakingsubs.png" alt="">
+																	</div>
+																	<div class="col-2">
+																		<div class="space">
+																	  <a type="button" target="_blank" class="btn btn-primary btn-block" href="http://bakingsubstitutions.com.s3-website.us-east-2.amazonaws.com/">See Live</a>
+																	  <a type="button" target="_blank" class="btn btn-primary btn-block" href="https://github.com/lucyliu546/foodbudget-backend">Backend source</a>
+																	  <a type="button" target="_blank" class="btn btn-primary btn-block" href="https://github.com/lucyliu546/foodbudget-frontend">Frontend source</a>
+																	</div>
+																	</div>
+																	
+																	
+																  </div>
+																  <hr>
+																	<div class="row">
+																	  <div class="col-4">
+																		<div class="list-group" id="list-tab" role="tablist">
+																		  <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">About</a>
+																		  <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Technologies</a>
+																		  
+																		</div>
+																	  </div>
+																	  <div class="col-8">
+																		<div class="tab-content" id="nav-tabContent">
+																		  <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+																			<h3>Test Account Access</h3>
+																			<p> Use the following details to login to a test account with pre-populated expense and budget data: 
+																		  </p>
+																		  	
+																			  <p class='centered'><b>Username: &nbsp;</b>  test</p>
+					
+																			  <p class='centered'><b>Password: &nbsp;</b>  test</p>
+																			
+																			<h3>Inspiration:</h3>
+																			  <p>
+																				  Food is such a big expense that encompasses everything from eating out, buying groceries, getting coffee, 
+																				  etc. I wanted to build an app that helps people understand what they are spending their food expenses on 
+																				  and to identify areas where they might be overspending. 
+																				</p>
+
+																			  
+																		</div>
+																		  <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+																			  <h3>Backend:</h3>
+																			  <p>Python, Django, Django Rest Framework, Postgres</p>
+	
+																			  <h3>Frontend:</h3>
+																			  <p>React, HTML, CSS, Bootstrap, ChartJS</p>
+	
+																			  <h3>Hosted on:</h3>
+																			  <p>AWS (S3, EC2/RDS via Elastic Beanstalk)</p>
+																		  </div>
+																		  <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+																		  <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+																		</div>
+																	  </div>
+																	</div>
+																 
+															</div>
+														  </div>
+														  
+														</div>
+													  </div>
+												</div>
+												
 										</div>
 										
 										
 									</div>
+									<!-- Baking subs -->
 									<div class="row centered">
 										<div class="8u">
-											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
+										<button type="button" class="btn btn-light" data-toggle="modal" data-target="#bakingsubsmodal">
+											<img class="image fit" src="images/bakingsubs.png" alt="">
+												</button>
+
+												<!-- Modal -->
+												<div class="modal fade" id="bakingsubsmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+												  <div class="modal-dialog modal-lg" role="document">
+												    <div class="modal-content">
+												      
+												      <div class="modal-header">
+												      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												          <span aria-hidden="true">&times;</span>
+												        </button>
+												      </div>
+
+												      <div class="modal-body">
+												      	
+												        <div class="container-fluid">
+												        	<div class="row">
+															    <div class="col-sm">
+																  <h2>Baking Substitutions</h2>
+																  <br>
+															    </div>
+															    
+															 </div>
+  															<div class="row">
+															    <div class="col">
+																	<img class="image fit" src="images/bakingsubs.png" alt="">
+															    </div>
+															    <div class="col-2">
+																	<div class="space">
+															      <a type="button" target="_blank" class="btn btn-primary btn-block" href="http://bakingsubstitutions.com.s3-website.us-east-2.amazonaws.com/">See Live</a>
+															      <a type="button" target="_blank" class="btn btn-primary btn-block" href="https://github.com/lucyliu546/subs">Source</a>
+																</div>
+																</div>
+															    
+															    
+															  </div>
+															  <hr>
+																<div class="row">
+																  <div class="col-4">
+																    <div class="list-group" id="list-tab" role="tablist">
+																      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">About</a>
+																      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Technologies</a>
+																      
+																    </div>
+																  </div>
+																  <div class="col-8">
+																    <div class="tab-content" id="nav-tabContent">
+																      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+																      	<h3>Inspiration:</h3>
+																		  <p>As a casual baker sometimes a recipe will call for something I do not have on hand. 
+																		  This leads to some googling to see if a substitute ingredient exists. 
+
+																		  This was my inspiration for creating this web app to cut down the amount of time 
+																		  searching around and spend more time on baking!
+																			</p>
+
+																      	<h3>About:</h3>
+																      	<p>Use the search box to search for an ingredient that you need a substitute for and the quantity. Additionally there is a pantry feature to see if you have the substitue ingredients readily available.
+																		</p>
+																	</div>
+																      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+																      	<h3>Backend:</h3>
+																      	<p>Python, Django, Django Rest Framework, Postgres</p>
+
+																      	<h3>Frontend:</h3>
+																      	<p>React, HTML, CSS, Material UI</p>
+
+																      	<h3>Hosted on:</h3>
+																      	<p>AWS (S3, EC2/RDS via Elastic Beanstalk)</p>
+																      </div>
+																      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+																      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+																    </div>
+																  </div>
+																</div>
+															 
+														</div>
+												      </div>
+												      
+												    </div>
+												  </div>
+												</div>
+												
 										</div>
 										
 									</div>

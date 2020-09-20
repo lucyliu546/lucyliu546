@@ -40,6 +40,33 @@
 		color: #777777;
 	}
 	
+	.list-group-item-action.active {
+
+		background-color: #ffa89e!important;
+		border: none;
+	  
+	  }
+
+	  .space{
+		  
+		  align-items: space-between;
+	  }
+
+	  .col-2{
+		  display: flex;
+		  
+		  align-items: center;
+	  }
+	
+	  .btn-block{
+		background-color: #ffa89e!important;
+		border: none;
+	  }
+
+	.active a{
+		background-color: green !important;
+	}
+
 	strong, b
 	{
 		font-weight: 400;
